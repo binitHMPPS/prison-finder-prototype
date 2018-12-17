@@ -1,0 +1,41 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Find a prison
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Find a prison</h1>
+
+      <p class="govuk-body">Use this service to:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Find a prison</li>
+        <li>Contact a prison</li>
+        <li>Find out how to book a visit at a particular prison</li>
+        <li>do something else</li>
+      </ul>
+
+      <p class="govuk-body">Registering takes around 5 minutes.</p>
+
+      {{ govukButton({
+        text: "Find a prison",
+        href: "find-a-prison.html",
+        classes: "govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"
+      }) }}
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p class="govuk-body">You can also <a class="govuk-link" href="#">register by post</a>.</p>
+
+      <p class="govuk-body">The online service is also available in <a class="govuk-link" href="#">Welsh (Cymraeg)</a>.</p>
+
+      <p class="govuk-body">You can’t register for this service if you’re in the UK illegally.</p>
+    </div>
+</div>
+
+{% endblock %}
